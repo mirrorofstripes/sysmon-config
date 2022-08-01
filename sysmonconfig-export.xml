@@ -450,7 +450,6 @@
 			<SourceImage condition="is">C:\Windows\system32\winlogon.exe</SourceImage>
 			<SourceImage condition="is">C:\Windows\system32\audiodg.exe</SourceImage>
 			<StartModule condition="is">C:\Windows\system32\kernel32.dll</StartModule>
-			<TargetImage condition="is">C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</TargetImage>
 		</CreateRemoteThread>
 	</RuleGroup>
 
