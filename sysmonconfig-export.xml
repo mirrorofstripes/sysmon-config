@@ -595,6 +595,11 @@
 				<!--ADDITIONAL REFERENCE: [ http://www.silentrunners.org/launchpoints.html ] -->
 				<!--ADDITIONAL REFERENCE: [ https://www.microsoftpressstore.com/articles/article.aspx?p=2762082&seqNum=2 ] -->
 				<!--ADDITIONAL REFERENCE: [ https://web.archive.org/web/20200116001643/http://scholarworks.rit.edu/cgi/viewcontent.cgi?article=1533&context=theses | Understanding malware autostart techniques - Matthew Gottlieb ] -->
+			<TargetObject name="T1218,Control Panel" condition="contains">Control Panel\CPLs</TargetObject> <!--Windows: Control Panels -->
+			<TargetObject name="T1546,NetSh Helper DLL" condition="contains">HKLM\SOFTWARE\Microsoft\NetSh</TargetObject> <!--Windows: NetSh -->
+			<TargetObject name="T1547,Print Monitors" condition="contains">HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors</TargetObject> <!--Windows: Print Monitors -->
+			<TargetObject name="T1547,Time Providers" condition="contains">HKLM\System\CurrentControlSet\Services\W32Time\TimeProviders</TargetObject> <!--Windows: Time Providers -->
+			<TargetObject name="T1555,Install Root Certificate" condition="contains">Certificates\Root\Certificates</TargetObject> <!--Windows: Time Providers -->
 			<TargetObject name="T1060,RunKey" condition="contains">CurrentVersion\Run</TargetObject> <!--Windows: Wildcard for Run keys, including RunOnce, RunOnceEx, RunServices, RunServicesOnce [Also covers terminal server] -->
 			<TargetObject name="T1060,RunPolicy" condition="contains">Policies\Explorer\Run</TargetObject> <!--Windows: Alternate runs keys | Credit @ion-storm-->
 			<TargetObject name="T1484" condition="contains">Group Policy\Scripts</TargetObject> <!--Windows: Group policy scripts-->
